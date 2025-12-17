@@ -1,0 +1,26 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: "N1a2r3u4t5o6@"
+    jdbc:
+      url: "jdbc:postgresql://localhost:5432/stylist?currentSchema=stylist"
+      max-size: 16
+
+  hibernate-orm:
+    log:
+      sql: true
+    database:
+      generation: update
+
+openapi: 3.1.0
+info:
+  title: Static OpenAPI document of fruits resource
+  description: Fruit resources Open API documentation
+  version: "1.0"
+
+servers:
+  - url: http://localhost:8080/q/openapi
+    description: Optional dev mode server description
+
+
